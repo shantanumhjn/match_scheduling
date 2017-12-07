@@ -1,0 +1,29 @@
+match
+  id
+  name
+  create_date
+  pk: id
+
+teams
+  match_id
+  id
+  name
+  pk: match_id, id
+
+games
+  match_id
+  id
+  team1_id
+  team2_id
+  team1_score
+  team2_score
+  pk:match_id, id
+
+schedule
+  match_id
+  game_id
+  venue_id
+  venue_name
+  slot_id
+  slot_name
+  pk: match_id, venue_id, game_id
